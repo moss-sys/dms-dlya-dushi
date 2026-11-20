@@ -89,6 +89,8 @@
     40% { transform: scale(1.035); box-shadow: 0 0 0 .07cqw rgba(255,255,255,.6), 0 0 2.6cqw rgba(255,255,255,.4); }
   }
   @keyframes sheen { from { transform: translateX(-120%); } to { transform: translateX(120%); } }
+  /* слайды 3-5: плашки стоят на месте, двигается и светится только человек */
+  .slide.calm.live .hot, .slide.calm.live .hot::after { animation: none; }
 
   /* фото на слайде 2 медленно наезжает */
   .hot--photo .kb { position: absolute; inset: 0; animation: kb 18s ease-in-out infinite alternate; }
@@ -165,7 +167,7 @@
       <div class="hot hot--card" aria-hidden="true" style="left:50.0000%;top:75.1852%;width:45.2604%;height:19.8148%;--r:1.4062cqw;--i:6"><img src="img/s2-h6.webp" alt=""></div>
     </div>
   </section>
-  <section class="slide" id="s3" style="--glow:#3d9bff">
+  <section class="slide calm" id="s3" style="--glow:#3d9bff">
     <div class="frame" role="img" aria-label="01 Баланс и перезагрузка">
       <img class="lay" src="img/s3-back.webp" alt="" style="left:0.0000%;top:0.0000%;width:100.0000%;height:100.0000%">
       <div class="mid mv-float" style="left:24.1667%;top:14.1358%;width:42.8472%;height:85.8642%"><div class="par"><div class="anim"><img class="glow" src="img/s3-glow.webp" alt="" style="left:-25.932%;top:-23.005%;width:151.864%;height:146.010%"><img src="img/s3-mid.webp" alt=""></div></div></div>
@@ -177,7 +179,7 @@
       <div class="hot hot--item" aria-hidden="true" style="left:64.2708%;top:66.0185%;width:31.1458%;height:27.7778%;--r:1.5625cqw;--i:4"><img src="img/s3-h4.webp" alt=""></div>
     </div>
   </section>
-  <section class="slide" id="s4" style="--glow:#ff3b47">
+  <section class="slide calm" id="s4" style="--glow:#ff3b47">
     <div class="frame" role="img" aria-label="02 Семейный ритм">
       <img class="lay" src="img/s4-back.webp" alt="" style="left:0.0000%;top:0.0000%;width:100.0000%;height:100.0000%">
       <div class="mid mv-jump" style="left:25.6250%;top:10.9259%;width:36.0417%;height:87.2222%"><div class="par"><div class="anim"><img class="glow" src="img/s4-glow.webp" alt="" style="left:-30.829%;top:-22.647%;width:161.657%;height:145.294%"><img src="img/s4-mid.webp" alt=""></div></div></div>
@@ -189,7 +191,7 @@
       <div class="hot hot--item" aria-hidden="true" style="left:64.2708%;top:66.0185%;width:31.1458%;height:28.7037%;--r:1.5625cqw;--i:4"><img src="img/s4-h4.webp" alt=""></div>
     </div>
   </section>
-  <section class="slide" id="s5" style="--glow:#3fb4ff">
+  <section class="slide calm" id="s5" style="--glow:#3fb4ff">
     <div class="frame" role="img" aria-label="03 Вызов и драйв">
       <img class="lay" src="img/s5-back.webp" alt="" style="left:0.0000%;top:0.0000%;width:100.0000%;height:100.0000%">
       <div class="mid mv-glide" style="left:17.9514%;top:1.1111%;width:46.1111%;height:96.7901%"><div class="par"><div class="anim"><img class="glow" src="img/s5-glow.webp" alt="" style="left:-24.096%;top:-20.408%;width:148.193%;height:140.816%"><img src="img/s5-mid.webp" alt=""></div></div></div>
